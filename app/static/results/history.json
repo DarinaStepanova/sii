@@ -1,0 +1,51 @@
+[
+    {
+        "type": "image",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\WIN_20240912_11_32_42_Pro.jpg",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_WIN_20240912_11_32_42_Pro.jpg",
+        "count": 2,
+        "timestamp": "2025-05-03 07:27:44"
+    },
+    {
+        "type": "image",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\prilavok.jpg",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_prilavok.jpg",
+        "count": 2,
+        "timestamp": "2025-05-03 21:25:55"
+    },
+    {
+        "type": "image",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\scale_1200.jpeg",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_scale_1200.jpeg",
+        "count": 13,
+        "timestamp": "2025-05-03 21:26:30"
+    },
+    {
+        "type": "video",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\WIN_20240912_11_32_27_Pro.mp4",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_WIN_20240912_11_32_27_Pro.mp4",
+        "count": 2,
+        "timestamp": "2025-05-03 21:28:20"
+    },
+    {
+        "type": "video",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\WIN_20240912_11_32_27_Pro.mp4",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_WIN_20240912_11_32_27_Pro.mp4",
+        "count": 2,
+        "timestamp": "2025-05-03 21:45:14"
+    },
+    {
+        "type": "video",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\WIN_20240912_11_32_27_Pro.mp4",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_WIN_20240912_11_32_27_Pro.mp4",
+        "count": 2,
+        "timestamp": "2025-05-03 21:48:12"
+    },
+    {
+        "type": "video",
+        "input_path": "C:\\Users\\daris\\Desktop\\project\\app\\data\\uploads\\WIN_20240912_11_32_27_Pro.mp4",
+        "output_path": "C:\\Users\\daris\\Desktop\\project\\app\\static\\results\\result_WIN_20240912_11_32_27_Pro.mp4",
+        "count": 2,
+        "timestamp": "2025-05-03 21:55:06"
+    }
+]

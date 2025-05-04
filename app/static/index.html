@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подсчёт посетителей</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <h1>Подсчёт посетителей в магазине</h1>
+    <div class="create-line"></div>
+    <div class="choise">
+        <form action="/upload/" enctype="multipart/form-data" method="post">
+            <label>Загрузите изображение:</label><br>
+            <input type="file" name="file" accept=".jpg,.jpeg,.png"><br><br>
+            <input type="submit" value="Обработать изображение">
+        </form>
+        <form action="/upload-video/" enctype="multipart/form-data" method="post">
+            <label>Загрузите видео:</label><br>
+            <input type="file" name="file" accept="video"><br><br>
+            <input type="submit" value="Обработать видео">
+        </form>
+        <form action="/start-stream" method="get">
+            <label>Выберите камеру:</label><br>
+            <input type="number" name="camera_index" value="0" min="0" max="10"><br><br>
+            <input type="submit" value="Запустить стрим с камеры">
+            <p>Стрим будет отображаться в отдельном окне на серверной машине (где запущен backend).</p>
+        </form>
+    </div>
+    
+    {% if result_img %}
+    <section>
+        <h3>Результат для изображения</h3>
+        <img src="{{ result_img }}" alt="Результат детекции" width="400">
+        <p>Количество людей: {{ count }}</p>
+    </section>
+    {% endif %}
+
+    {% if result_video %}
+    <h2>Результат видео</h2>
+    <video width="640" controls>
+        <source src="{{ result_video }}" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+    <p>Суммарное количество обнаружений: {{ count }}</p>
+    {% endif %}
+    
+    {% if history %}
+    <section>
+        <h2>История</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Тип</th>
+                    <th>Файл</th>
+                    <th>Количество</th>
+                    <th>Время</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for record in history %}
+                <tr>
+                    <td>{{ record.type }}</td>
+                    <td><a href="{{ record.output_path }}" target="_blank">{{ record.input_path }}</a></td>
+                    <td>{{ record.count }}</td>
+                    <td>{{ record.timestamp }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    <form action="/download_report" method="get">
+        <button type="submit">Скачать отчёт (Excel)</button>
+    </form>
+    {% endif %}
+
+    
+</body>
+</html>

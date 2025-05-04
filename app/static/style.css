@@ -1,0 +1,111 @@
+body {
+    padding: 4vh;
+    text-align: center;
+    font-family: 'Jura';
+}
+
+h1{
+    font-family: 'Bebas Neue Cyrillic';
+    font-size: 5vh;
+    letter-spacing: 1vh;
+}
+
+.create-line {
+    width: 5vw;
+    border-top: 0.5vh solid #000000;
+    display: inline-block
+}
+
+.choise{
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    margin: 10vh;
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label{
+    font-weight: 800;
+    font-size: 3vh;
+}
+
+form input[type=file]{
+    background-color: aliceblue;
+    font-size: 2vh;
+    font-family: 'Jura';
+    display: flex;
+    justify-content: flex-start;
+	align-items: center;
+    text-align: left;
+    align-content: end;
+}
+form input::file-selector-button{
+
+    background-color: #7f9ccb;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px ridge #7f9ccb;
+    font-size: 2vh;
+    font-family: 'Jura';
+}
+
+form input::file-selector-button:hover {
+  background-color: #2d5ba3;
+  color: white;
+}
+
+form input::file-selector-button:active {
+  background-color: #0d3f8f;
+  color: white;
+}
+
+form input[type="submit"], button{
+    font-family: 'Jura';
+    display: flex;
+    align-self: center;
+    background-color: #000000; 
+    border: none;
+    border-radius: 1vh;
+    font-size: 2vh;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 4vh;
+}
+
+form input[type="number"]{
+    font-family: 'Jura';
+    display: flex;
+    align-self: center;
+    background-color: aliceblue; 
+    border: none;
+    border-radius: 1vh;
+    font-size: 2vh;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section{
+    text-align: center;
+}
+
+table{
+    display: inline-block;
+    padding: 1vh;
+}
+
+  
